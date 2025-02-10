@@ -28,6 +28,7 @@ cd RTX-VPN
 ```bash
 ./rtxvpn_manage.sh
 ```
+![App Screenshot](https://raw.githubusercontent.com/Sir-MmD/RTX-VPN/refs/heads/main/screenshots/menu.png)
 ## Supported OS
 This script can be run on all Debian-based distributions that use systemd
 ## Tunnel Tweaking: Xray-core
