@@ -8,8 +8,8 @@ NC=$(tput sgr0) # No Color
 
 # Root check
 check_root_user() {
-  if [ "$EUID" -ne 0 ]; then
-    echo "This script must be run as ${RED}root${NC}."
+  if [ "$(id -u)" -ne 0 ]; then
+    echo "This script must be run as ${RED}root!${NC}"
     exit 1
   fi
 }
