@@ -3,9 +3,9 @@
 # RTX-VPN = (Rathole-tun2socks-Xray-core) VPN
 
 
-This script provides solution to setup and tunnel L2TP/OpenVPN in restrected locations (Iran, China, ...)
+This script provides a solution for setting up and tunneling L2TP/OpenVPN in restricted locations (e.g., Iran, China).
 
-This script aims to tunnel traffic via xray core in reverse mode (rathole) so the traffic look legitment
+It aims to tunnel traffic via Xray-core in reverse mode (rathole), making the tunnel traffic appear legitimate.
 
 ## Diagram:
 ![App Screenshot](https://raw.githubusercontent.com/Sir-MmD/RTX-VPN/refs/heads/main/diagram.PNG)
