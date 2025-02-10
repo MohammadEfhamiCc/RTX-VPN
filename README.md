@@ -20,6 +20,8 @@ Finally, we use Policy-Based Routing (PBR) to route incoming L2TP/OpenVPN traffi
 ## Installation
 ```bash
 git clone https://github.com/Sir-MmD/RTX-VPN.git
+chmod -R +x RTX-VPN
+cd RTX-VPN
 ./rtxvpn_setup.sh
 ```
 ## Manage Users
