@@ -1,13 +1,15 @@
 #MmD
 #!/bin/bash
 
-TUNNEL_SERVER_IP=""
-check_root_user
+GREEN=$(tput setaf 2)
+RED=$(tput setaf 1)
+GOLD=$(tput setaf 3)
+NC=$(tput sgr0) # No Color
 
 # Root check
 check_root_user() {
   if [ "$EUID" -ne 0 ]; then
-    echo "This script must be run as root!"
+    echo "This script must be run as ${RED}root${NC}."
     exit 1
   fi
 }
@@ -458,10 +460,10 @@ setup_tunnel() {
 	vpn_type
 	xray_tunnel
 	echo
-	echo "All Done! You can use 'x2vpn_manager.sh' to manage users"
+	echo "${GREEN}All Done!${NC} You can use ${RED}'x2vpn_manager.sh'${NC} to manage users"
 	echo	
 }
-
+TUNNEL_SERVER_IP=""
 # Setup edge server
 setup_edge() {
     echo "Setting up Edge server..."
@@ -487,6 +489,9 @@ setup_edge() {
     else
         echo "Error: $CONFIG_FILE not found!"
     fi
+	echo
+	echo "${GREEN}All Done!${NC} Enjoy your ${GOLD}FREEDOM${NC}"
+	echo	
 }
 
 # Select VPN type
@@ -526,8 +531,24 @@ vpn_type() {
     esac
 }
 
+check_root_user
 # Main menu
 while true; do
+  echo
+  echo
+  echo "${GREEN} ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄       ▄       ▄               ▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄        ▄ "
+  echo "▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░▌     ▐░▌     ▐░▌             ▐░▌▐░░░░░░░░░░░▌▐░░▌      ▐░▌"
+  echo "▐░█▀▀▀▀▀▀▀█░▌ ▀▀▀▀█░█▀▀▀▀  ▐░▌   ▐░▌       ▐░▌           ▐░▌ ▐░█▀▀▀▀▀▀▀█░▌▐░▌░▌     ▐░▌"
+  echo "▐░▌       ▐░▌     ▐░▌       ▐░▌ ▐░▌         ▐░▌         ▐░▌  ▐░▌       ▐░▌▐░▌▐░▌    ▐░▌${NC}"
+  echo "▐░█▄▄▄▄▄▄▄█░▌     ▐░▌        ▐░▐░▌${GOLD}▄▄▄▄▄▄▄▄▄▄▄${NC}▐░▌       ▐░▌   ▐░█▄▄▄▄▄▄▄█░▌▐░▌ ▐░▌   ▐░▌"
+  echo "▐░░░░░░░░░░░▌     ▐░▌         ▐░▌${GOLD}▐  FREEDOM  ▌${NC}▐░▌     ▐░▌    ▐░░░░░░░░░░░▌▐░▌  ▐░▌  ▐░▌"
+  echo "▐░█▀▀▀▀█░█▀▀      ▐░▌        ▐░▌░▌${GOLD}▀▀▀▀▀▀▀▀▀▀▀${NC}  ▐░▌   ▐░▌     ▐░█▀▀▀▀▀▀▀▀▀ ▐░▌   ▐░▌ ▐░▌"
+  echo "${RED}▐░▌     ▐░▌       ▐░▌       ▐░▌ ▐░▌             ▐░▌ ▐░▌      ▐░▌          ▐░▌    ▐░▌▐░▌"
+  echo "▐░▌      ▐░▌      ▐░▌      ▐░▌   ▐░▌             ▐░▐░▌       ▐░▌          ▐░▌     ▐░▐░▌"
+  echo "▐░▌       ▐░▌     ▐░▌     ▐░▌     ▐░▌             ▐░▌        ▐░▌          ▐░▌      ▐░░▌"
+  echo " ▀         ▀       ▀       ▀       ▀               ▀          ▀            ▀        ▀▀ ${NC}"
+
+                                                                                    
 	echo
     echo "Which server you are trying to setup?"
 	echo
