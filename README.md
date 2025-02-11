@@ -34,7 +34,7 @@ This script can be run on all Debian-based distributions that use systemd
 ## Tunnel Tweaking: Xray-core
 This script uses 'VLESS + WS' as the default connection for Xray-core. You can configure your desired settings in ```/opt/xray_edge.json``` for the Edge Server and ```/opt/xray_tunnel.json``` for the Tunnel Server
 ## Tunnel Tweaking: rathole
-"You can also modify the Rathole configuration in ```/opt/rathole_edge.toml``` for the Edge Server and ```/opt/rathole_tunnel.toml``` for the Tunnel Server."
+You can also modify the Rathole configuration in ```/opt/rathole_edge.toml``` for the Edge Server and ```/opt/rathole_tunnel.toml``` for the Tunnel Server."
 ## Systemd Services: Tunnel Server
 tun2socks L2TP Routing Service: ```tun2socks_l2tp_setup.service```
 
@@ -59,7 +59,7 @@ rathole Edge Service: ```rathole_tunnel.service```
 ![App Screenshot](https://raw.githubusercontent.com/Sir-MmD/RTX-VPN/refs/heads/main/screenshots/openvpn/speedtest.jpg)
 
 ### Note: The bandwidth of the tested internet connection is 35 Mbps download and 9 Mbps upload
-There are also screenshots of the DNS Leak Test from https://dnsleaktest.com, which can be found in the 'screenshots' folder
+There are also screenshots of the DNS Leak Test from https://dnsleaktest.com, which can be found inside the 'screenshots' folder
 ## CopyRight
 L2TP Installer Script: https://github.com/bedefaced/vpn-install
 
