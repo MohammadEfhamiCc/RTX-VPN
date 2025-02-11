@@ -483,7 +483,7 @@ setup_edge() {
     # Update remote_addr in /opt/rathole_edge.toml
     CONFIG_FILE="/opt/rathole_edge.toml"
     
-    if [[ -f "$CONFIG_FILE" ]]; then
+    if [ -f "$CONFIG_FILE" ]; then
         sed -i "s/remote_addr = \".*:[0-9]\+\"/remote_addr = \"$TUNNEL_SERVER_IP:7081\"/" "$CONFIG_FILE"
         echo "Updated remote_addr in $CONFIG_FILE"
     else
