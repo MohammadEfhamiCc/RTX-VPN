@@ -1,6 +1,6 @@
 
 # L2TP/OpenVPN Server with Xray + Rathole + tun2socks Tunnel
-# RTX-VPN = (Rathole-tun2socks-Xray-core) VPN
+# RTX-VPN = (Rathole-tun2socks-Xray) VPN
 
 
 This script provides a solution for setting up and tunneling L2TP/OpenVPN in restricted locations (e.g., Iran, China).
@@ -35,6 +35,8 @@ This script can be run on all Debian-based distributions that use systemd
 This script uses 'VLESS + WS' as the default connection for Xray-core. You can configure your desired settings in ```/opt/xray_edge.json``` for the Edge Server and ```/opt/xray_tunnel.json``` for the Tunnel Server
 ## Tunnel Tweaking: rathole
 You can also modify the Rathole configuration in ```/opt/rathole_edge.toml``` for the Edge Server and ```/opt/rathole_tunnel.toml``` for the Tunnel Server."
+## Important Note
+Please DO NOT modify the vpn server ip pool! But if you did, you MUST change the ip pool inside the ```rtxvpn_setup.sh```
 ## Systemd Services: Tunnel Server
 tun2socks L2TP Routing Service: ```tun2socks_l2tp_setup.service```
 
