@@ -1,6 +1,7 @@
 #MmD
 #!/bin/bash
 l2tp_manage() {
+    echo
     echo "Choose an option:"
     echo "1. Add User"
     echo "2. Remove User"
@@ -21,6 +22,7 @@ l2tp_manage() {
 
 # Main menu
 while true; do
+    echo
     echo "Choose VPN type"
     echo
     echo "1) L2TP"
