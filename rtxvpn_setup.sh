@@ -460,7 +460,7 @@ setup_tunnel() {
 	vpn_type
 	xray_tunnel
 	echo
-	echo "${GREEN}All Done!${NC} You can use ${RED}'x2vpn_manager.sh'${NC} to manage users"
+	echo "${GREEN}All Done!${NC} You can use ${RED}'rtxvpn_manage.sh'${NC} to manage users"
 	echo	
 }
 TUNNEL_SERVER_IP=""
