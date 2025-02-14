@@ -17,6 +17,8 @@ The Edge Server establishes the first connection to the Tunnel Server (reverse t
 
 Finally, we use Policy-Based Routing (PBR) to route incoming L2TP/OpenVPN traffic to the tun2socks interface.
 
+## Installation Tutorial
+https://youtu.be/Djc6CfClCvM
 ## Installation
 ```bash
 git clone https://github.com/Sir-MmD/RTX-VPN.git
