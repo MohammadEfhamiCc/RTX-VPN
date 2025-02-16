@@ -1,10 +1,14 @@
-[English](/README.md) | [فارسی](/README_fa.md)
+## [English](/README.md) | [فارسی](/README_fa.md)
 # L2TP/OpenVPN Server with Xray + Rathole + tun2socks Tunnel
 # RTX-VPN = (Rathole-tun2socks-Xray) VPN
+![App Screenshot](https://raw.githubusercontent.com/Sir-MmD/RTX-VPN/refs/heads/main/screenshots/menu.png)
+## این اسکریپت چی هستش؟
 
 این اسکریپت یک راه حل برای راه اندازی تانل و سرور L2TP/OpenVPN در مناطق محدود شده هستش (مثل ایران و چین)
 
 هدف ایجاد یک تانل Xray-Core بصورت Reverse شده (توسط rathole) هستش تا ترافیک قابل شناسایی نباشه
+
+و البته دوستانی که نیاز به کانکشن L2TP/OpenVPN برای راه اندازی اینترنت آزاد روی مودم دارند میتونند از این اسکریپت نهایت استفاده رو ببرند!
 
 ## دیاگرام:
 ![App Screenshot](https://raw.githubusercontent.com/Sir-MmD/RTX-VPN/refs/heads/main/diagram.PNG)
@@ -25,7 +29,6 @@ chmod -R +x RTX-VPN
 cd RTX-VPN
 ./rtxvpn_setup.sh
 ```
-![App Screenshot](https://raw.githubusercontent.com/Sir-MmD/RTX-VPN/refs/heads/main/screenshots/menu.png)
 ## مدیریت کاربر ها
 ```bash
 ./rtxvpn_manage.sh
