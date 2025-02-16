@@ -1,4 +1,4 @@
-[English](/README.md) | [فارسی](/README.fa_IR.md)
+[English](/README.md) | [فارسی](/README_fa.md)
 # L2TP/OpenVPN Server with Xray + Rathole + tun2socks Tunnel
 # RTX-VPN = (Rathole-tun2socks-Xray) VPN
 
