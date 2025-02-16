@@ -1,8 +1,7 @@
-[English](/README.md) | [فارسی](/README_fa.md)
+## [English](/README.md) | [فارسی](/README_fa.md)
+![App Screenshot](https://raw.githubusercontent.com/Sir-MmD/RTX-VPN/refs/heads/main/screenshots/menu.png)
 # L2TP/OpenVPN Server with Xray + Rathole + tun2socks Tunnel
 # RTX-VPN = (Rathole-tun2socks-Xray) VPN
-
-
 This script provides a solution for setting up and tunneling L2TP/OpenVPN in restricted locations (e.g., Iran, China).
 
 It aims to tunnel traffic via Xray-core in reverse mode (rathole), making the tunnel traffic appear legitimate.
@@ -26,7 +25,6 @@ chmod -R +x RTX-VPN
 cd RTX-VPN
 ./rtxvpn_setup.sh
 ```
-![App Screenshot](https://raw.githubusercontent.com/Sir-MmD/RTX-VPN/refs/heads/main/screenshots/menu.png)
 ## Manage Users
 ```bash
 ./rtxvpn_manage.sh
