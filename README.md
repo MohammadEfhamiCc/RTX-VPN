@@ -55,7 +55,7 @@ rathole Tunnel Service: ```rathole_tunnel.service```
 ## Systemd Services: Edge Server
 Xray-Core Edge Service: ```xray_edge.service```
 
-rathole Edge Service: ```rathole_tunnel.service```
+rathole Edge Service: ```rathole_edge.service```
 
 ## Speedtest: L2TP
 ![App Screenshot](https://raw.githubusercontent.com/Sir-MmD/RTX-VPN/refs/heads/main/screenshots/l2tp/speedtest.jpg)
