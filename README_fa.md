@@ -20,6 +20,17 @@
 
 و در آخر با استفاده از Policy-Based Routing (PBR) ترافیک ورودی L2TP/OpenVPN رو به کارت شبکه مجازی که توسط tun2socks ایجاد شده بود هدایت میکنیم.
 
+## دونیت
+🔹USDT-TRC20: ```THuvCFh7Epk926fs23ew6NPFShMrnagVxx```
+
+🔹TRX: ```THuvCFh7Epk926fs23ew6NPFShMrnagVxx```
+
+🔹LTC: ```ltc1quah8ej7ukez53wykehpeew7spya0kzx59r6nfk```
+
+🔹BTC: ```bc1qe7z26fhd47xwezp25vk44e8e925ee43txdnfdp```
+
+🔹ETH: ```0x7Bb6CfF428F75b468Ea49657D345Efc45C7104C9```
+
 ## آموزش نصب
 https://youtu.be/Djc6CfClCvM
 ## نصب
