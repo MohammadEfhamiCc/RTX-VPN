@@ -1,1 +1,1 @@
-rtxvpn2 + softether (fa)
+rtxvpn2 + softether
