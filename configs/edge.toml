@@ -1,0 +1,7 @@
+#Rathole-Edge
+[client]
+remote_addr = "IP:7081"
+
+[client.services.rtxvpn]
+token = "uuid"
+local_addr = "127.0.0.1:7082"
