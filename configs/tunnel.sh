@@ -18,9 +18,9 @@ pbr(){
 
   ip route add 198.19.0.0/24 dev rtx table rtx_table || true
   ip route add default dev rtx table rtx_table || true
-  ip rule add from 198.19.0.0/24 table rtx_table || true
-  ip rule add to 8.8.4.4 table main || true
-  ip rule add to 8.8.8.8 table main || true
+  ip rule add from 198.19.0.0/24 table rtx_table priority 10 || true
+  ip rule add to 8.8.8.8 table main priority 11 || true
+  ip rule add to 8.8.4.4 table main priority 12 || true
 
   log "PBR setup completed"
 }
