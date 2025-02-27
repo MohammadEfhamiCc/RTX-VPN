@@ -16,9 +16,9 @@ pbr(){
   ip addr add 198.19.0.1/24 dev tap_softether || true
   ip link set dev tap_softether up || true
 
-  ip route add 192.168.19.0/24 dev rtx table rtx_table || true
+  ip route add 192.19.0.0/24 dev rtx table rtx_table || true
   ip route add default dev rtx table rtx_table || true
-  ip rule add from 192.168.19.0/24 table rtx_table || true
+  ip rule add from 192.19.0.0/24 table rtx_table || true
   ip rule add to 8.8.4.4 table main || true
   ip rule add to 8.8.8.8 table main || true
 
