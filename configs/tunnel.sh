@@ -26,7 +26,7 @@ pbr(){
 }
 
 rathole(){
-  /opt/rtxvpn_v2/rathole /opt/rtxvpn_v2/tunnel.toml &
+  /opt/rtxvpn_v2/tunnel/rathole /opt/rtxvpn_v2/tunnel/tunnel.toml &
   rathole_pid=$!
   if [ $? -ne 0 ]; then
     log "Error starting rathole"
@@ -36,7 +36,7 @@ rathole(){
 }
 
 tun2socks(){
-  /opt/rtxvpn_v2/tun2socks -device rtx -proxy socks5://127.0.0.1:10808 &
+  /opt/rtxvpn_v2/tunnel/tun2socks -device rtx -proxy socks5://127.0.0.1:10808 &
   tun2socks_pid=$!
   if [ $? -ne 0 ]; then
     log "Error starting tun2socks"
@@ -46,7 +46,7 @@ tun2socks(){
 }
 
 xray(){
-  /opt/rtxvpn_v2/xray run -c /opt/rtxvpn_v2/tunnel.json &
+  /opt/rtxvpn_v2/tunnel/xray run -c /opt/rtxvpn_v2/tunnel/tunnel.json &
   xray_pid=$!
   if [ $? -ne 0 ]; then
     log "Error starting xray"
