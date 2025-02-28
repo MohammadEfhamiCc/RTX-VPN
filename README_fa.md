@@ -48,6 +48,19 @@ sh -c "$(wget https://raw.githubusercontent.com/Sir-MmD/RTX-VPN/v2/rtxvpn_v2.sh 
 
 ## تست سرعت
 ![App Screenshot](https://raw.githubusercontent.com/Sir-MmD/RTX-VPN/refs/heads/v2/speedtest.jpg)
+
+## حل مشکل اتصال OpenVPN
+کانفیگ OpenVPN تهیه شده از SoftEther از cipher قدیمی استفاده میکنه که برای حل این موضوع باید این متن رو زیر ```cipher AES-128-CBC``` در فایل کانفیگتون وارد کنید:
+```bash
+data-ciphers AES-128-CBC:AES-256-GCM:AES-128-GCM:CHACHA20-POLY1305
+```
+همچنین توصیه میشه قسمت ```remote address``` رو با IP سرور یا دامنه شخصی جایگزین کنید
+
+## تنظیمات توصیه شده برای SoftEther
+- غیرفعال کردن DDNS سرور: ```declare DDnsClient: bool Disabled true```
+- غیر فعال کردن WebUI سرور: ```bool DisableJsonRpcWebApi true```
+- حذف پورت های غیر نیاز
+
 ## تنظیمات تانل: Xray-core
 این اسکریپت بصورت پیشفرض از کانفیگ 'VLESS + WS' برای Xray-Core استفاده میکنه. میتونید کانفیگ دلخواهتون رو در ```/opt/rtxvpn_v2/edge/edge.json``` برای سرور Edge (خارج) و ```/opt/rtxvpn_v2/tunnel/tunnel.json``` برای سرور تانل (ایران) اعمال کنید
 
