@@ -4,8 +4,8 @@
 # RTX-VPN = (Rathole-tun2socks-Xray) VPN
 ![App Screenshot](https://raw.githubusercontent.com/Sir-MmD/RTX-VPN/refs/heads/v2/menu.png)
 
-## What Does this script do?
-This script provides a solution for setting up L2TP/OpenVPN/SSTP server via "SoftEther" and tunnel via "Rathole+Tun2socks+Xray" in restricted locations (e.g., Iran, China).
+## این اسکریپت  چی هستش؟
+این اسکریپت یک راه حل برای راه اندازی تانل و سرور L2TP/OpenVPN/SSTP به همراه SoftEther در مناطق محدود شده هستش (مثل ایران و چین)
 
 ## پروتکل های پشتیبانی شده
 - L2TP
