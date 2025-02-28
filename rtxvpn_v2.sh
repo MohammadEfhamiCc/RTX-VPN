@@ -79,7 +79,6 @@ uninstall() {
             fi
         done
     else
-        echo "RTX-VPN v2 (Tunnel) is ${RED}not installed!${NC}"
     fi
 
     # Check and remove the edge directory
@@ -110,7 +109,6 @@ uninstall() {
             fi
         done
     else
-        echo "RTX-VPN v2 (Edge) is ${RED}not installed!${NC}"
     fi
 }
 
