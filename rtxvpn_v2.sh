@@ -386,9 +386,14 @@ while true; do
 					dnsmasq_setup
 					echo ""
 					echo ""
-					echo ""
 					echo "${GREEN}Tunnel installed!${NC} Please Setup the Edge server and enter this UUID: ${GOLD}$UUID${NC}"
-					echo ""
+     					echo ""
+	  				echo "You can use this command to check RTX-VPN & SoftEther status:"
+       					echo "${CYAN}systemctl status rtxvpn${NC}"
+	    				echo "${CYAN}systemctl status softether${NC}"
+	 				echo "${CYAN}systemctl status dnsmasq${NC}"
+      					echo ""
+	   				echo ""
                     break
                 else
                     echo "Please follow instructions, then type ${CYAN}'verify'${NC} to continue: "
@@ -401,6 +406,13 @@ while true; do
 			download_edge_files
 			uuid_edge
 			edge_setup
+			echo ""
+			echo ""
+			echo "${GREEN}Edge installed!${NC} Enjoy your ${GOLD}FREEDOM${NC}"
+     			echo ""
+			echo "You can use this command to check RTX-VPN status: ${CYAN}systemctl status rtxvpn${NC}"
+   			echo ""
+      			echo ""
             break
             ;;
         3)
