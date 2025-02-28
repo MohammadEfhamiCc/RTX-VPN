@@ -36,7 +36,7 @@
 🔹ETH: ```0x7Bb6CfF428F75b468Ea49657D345Efc45C7104C9```
 
 ## آموزش نصب
-SOON
+https://www.youtube.com/watch?v=TbIPd9ni1PU
 
 ## نصب
 ```bash
