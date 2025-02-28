@@ -259,6 +259,7 @@ EOF
 }
 
 tunnel_setup(){
+	echo "200 rtx_table" >> /etc/iproute2/rt_tables
 	cat <<EOF > /etc/systemd/system/rtxvpn.service
 [Unit]
 Description=RTX-VPN Tunnel Service
