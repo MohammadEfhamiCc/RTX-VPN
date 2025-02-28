@@ -27,7 +27,7 @@ uninstall() {
     if [ -d "/opt/rtxvpn_v2/tunnel" ]; then
         while true; do
             read -p "This will remove ${CYAN}RTX-VPN v2 (Tunnel)${NC} and its associated files. Are you sure? (y/n): " confirm
-            if [ "$confirm" == "y" || "$confirm" == "Y" ]; then
+            if [ "$confirm" = "y" ] || [ "$confirm" = "Y" ]; then
                 echo "Uninstalling RTX-VPN v2 (Tunnel)..."
                 rm -rf "/opt/rtxvpn_v2/tunnel"
 				
@@ -71,7 +71,7 @@ uninstall() {
 
                 echo "RTX-VPN v2 (Tunnel) has been ${GREEN}removed${NC}"
                 break
-            elif [ "$confirm" == "n" || "$confirm" == "N" ]; then
+            elif [ "$confirm" = "n" ] || [ "$confirm" = "N" ]; then
                 echo "Uninstallation of RTX-VPN v2 (Tunnel) ${RED}canceled${NC}"
                 break
             else
@@ -84,7 +84,7 @@ uninstall() {
     if [ -d "/opt/rtxvpn_v2/edge" ]; then
         while true; do
             read -p "This will remove ${CYAN}RTX-VPN v2 (Edge)${NC} and its associated files. Are you sure? (y/n): " confirm
-            if [ "$confirm" == "y" || "$confirm" == "Y" ]; then
+            if [ "$confirm" = "y" ] || [ "$confirm" = "Y" ]; then
                 echo "Uninstalling RTX-VPN v2 (Edge)..."
                 rm -rf "/opt/rtxvpn_v2/edge"
                 
@@ -100,7 +100,7 @@ uninstall() {
                 
                 echo "RTX-VPN v2 (Edge) has been ${GREEN}removed${NC}"
                 break
-            elif [ "$confirm" == "n" || "$confirm" == "N" ]; then
+            elif [ "$confirm" = "n" ] || [ "$confirm" = "N" ]; then
                 echo "Uninstallation of RTX-VPN v2 (Edge) ${RED}canceled${NC}"
                 break
             else
@@ -379,7 +379,7 @@ while true; do
 			softether_tip
             while true; do
                 read -p "Please follow instructions, then type ${CYAN}'verify'${NC} to continue: " confirm
-                if [ "$confirm" == "verify" ]; then
+                if [ "$confirm" = "verify" ]; then
                     uuid_tunnel
 					tunnel_setup
 					dnsmasq_setup
