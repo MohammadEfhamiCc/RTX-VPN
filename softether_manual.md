@@ -1,5 +1,9 @@
 # SoftEther Manual Setup Tutorial
 # آموزش راه اندازی SoftEther
+
+## Download Link: https://www.softether-download.com/files/softether/v4.43-9799-beta-2023.08.31-tree/Windows/SoftEther_VPN_Server_and_VPN_Bridge/softether-vpnserver_vpnbridge-v4.43-9799-beta-2023.08.31-windows-x86_x64-intel.exe
+
+
 ## Step 1
 ![App Screenshot](https://raw.githubusercontent.com/Sir-MmD/RTX-VPN/refs/heads/v2/softether_manual/1.png)
 
