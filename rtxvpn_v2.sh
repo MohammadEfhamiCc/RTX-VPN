@@ -8,7 +8,6 @@ CYAN=$(tput setaf 6)
 NC=$(tput sgr0)
 
 UUID=""
-RTX_PATH="/opt/rtxvpn_v2"
 
 root_check() {
   if [ "$(id -u)" -ne 0 ]; then
