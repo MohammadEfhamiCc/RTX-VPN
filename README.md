@@ -36,7 +36,7 @@ Finally, we use Policy-Based Routing (PBR) to route SoftEther incoming connectio
 🔹ETH: ```0x7Bb6CfF428F75b468Ea49657D345Efc45C7104C9```
 
 ## Installation Tutorial
-SOON
+https://www.youtube.com/watch?v=TbIPd9ni1PU
 
 ## Installation
 ```bash
