@@ -388,7 +388,7 @@ while true; do
 					echo ""
 					echo "${GREEN}Tunnel installed!${NC} Please Setup the Edge server and enter this UUID: ${GOLD}$UUID${NC}"
      					echo ""
-	  				echo "You can use this command to check RTX-VPN & SoftEther status:"
+	  				echo "You can use these commands to check RTX-VPN & SoftEther status:"
        					echo "${CYAN}systemctl status rtxvpn${NC}"
 	    				echo "${CYAN}systemctl status softether${NC}"
 	 				echo "${CYAN}systemctl status dnsmasq${NC}"
