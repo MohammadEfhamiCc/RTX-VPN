@@ -48,6 +48,14 @@ This script can be run on all Debian-based distributions that use systemd
 
 ## Speedtest
 ![App Screenshot](https://raw.githubusercontent.com/Sir-MmD/RTX-VPN/refs/heads/v2/speedtest.jpg)
+
+## Fix OpenVPN Connection Error
+The OpenVPN client configuration file provided by SoftEther uses an outdated cipher. To fix this issue, please add the following line below cipher ```AES-128-CBC``` in your configuration file:
+```bash
+data-ciphers AES-128-CBC:AES-256-GCM:AES-128-GCM:CHACHA20-POLY1305
+```
+Additionally, it is recommended to replace ```remote address``` with your actual IP or personal domain
+
 ## Tunnel Tweaking: Xray-Core
 This script uses 'VLESS + WS' as the default connection for Xray-core. You can configure your desired settings in ```/opt/rtxvpn_v2/edge/edge.json``` for the Edge Server and ```/opt/rtxvpn_v2/tunnel/tunnel.json``` for the Tunnel Server
 
