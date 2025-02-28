@@ -78,7 +78,6 @@ uninstall() {
                 echo "Invalid input. Please enter 'y' for yes or 'n' for no."
             fi
         done
-    else
     fi
 
     # Check and remove the edge directory
@@ -109,6 +108,7 @@ uninstall() {
             fi
         done
     else
+        echo "RTX-VPN v2 is ${RED}not installed!${NC}"
     fi
 }
 
@@ -403,7 +403,7 @@ while true; do
             break
             ;;
         3)
-            uninstall  # Ensure `uninstall` function or command is defined
+            uninstall
             break
             ;;
         *)
