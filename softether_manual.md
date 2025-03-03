@@ -14,7 +14,7 @@
 ![App Screenshot](https://raw.githubusercontent.com/Sir-MmD/RTX-VPN/refs/heads/v2/softether_manual/3.png)
 
 ## Step 4
-![App Screenshot](https://raw.githubusercontent.com/Sir-MmD/RTX-VPN/refs/heads/v2/softether_manual/3.png)
+![App Screenshot](https://raw.githubusercontent.com/Sir-MmD/RTX-VPN/refs/heads/v2/softether_manual/4.png)
 
 ## Step 5
 ![App Screenshot](https://raw.githubusercontent.com/Sir-MmD/RTX-VPN/refs/heads/v2/softether_manual/5.png) 
